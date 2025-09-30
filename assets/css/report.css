@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #333;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Report Table */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.report-table th,
+.report-table td {
+  padding: 12px 15px;
+  font-size: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.report-table th {
+  background: #f3f4f6;
+  font-weight: bold;
+  color: #333;
+}
+
+.report-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.report-table tr:hover {
+  background: #f1f1f1;
+}
+
+/* Status badge */
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.requested {
+  background: #fff3e0;
+  color: #ff9800;
+}
+
+.status.approved {
+  background: #e3f2fd;
+  color: #2196f3;
+}
+
+.status.rejected {
+  background: #ffebee;
+  color: #f44336;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn.export {
+  background: #ff6600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.btn.export:hover {
+  background: #e05200;
+}
